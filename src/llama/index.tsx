@@ -79,7 +79,7 @@ export const LlamaForm = (props: any) => {
   useEffect(() => {
     structureData();
   }, []);
-
+  
   const formBuilder = () => {
     if (!props.schema) return;
     if (wizard) {
