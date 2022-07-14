@@ -14,6 +14,7 @@ interface Props {
   onSubmit: any;
   buttons: LooseObject;
   step: any;
+  stepLength:any;
   wizardStepOptions: any;
 }
 
@@ -87,6 +88,7 @@ const MultipleForm = forwardRef((props: Props, ref: any) => {
     let currentData = {
       step: step,
       data: finalData,
+      stepLength: props?.stepLength
     };
 
     let wizardStepOptions = props?.wizardStepOptions;
